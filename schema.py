@@ -1,6 +1,11 @@
 import graphene
 import json
 
+class User(graphene.ObjectType):
+    id = graphene.ID()
+    username = graphene.String()
+    created_at = graphene.DateTime()
+
 class Query(graphene.ObjectType):
     hello = graphene.String()
     is_admin = graphene.Boolean()
