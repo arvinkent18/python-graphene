@@ -19,4 +19,4 @@ result = schema.execute(
 
 dictResult = dict(result.data.items())
 
-print(json.dumps(dictResult))
+print(json.dumps(dictResult,indent=2))
